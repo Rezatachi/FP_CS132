@@ -1,0 +1,56 @@
+<!--
+  CS 132
+  Final Project
+
+  HTML for the product details page.
+  This page displays the details of a single product.
+  The product details are fetched from the server using JavaScript.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="utils.js"></script>
+    <script defer src="product.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Ekko Labs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><box-icon name="cart"></box-icon></a>
+    </header>
+    <main>
+      <h1>Product Details</h1>
+      <section id="product-details">
+        <div id="error-message"></div>
+        <!-- placeholder html for JS manipulation -->
+        <div id="product-name"></div>
+        <img id="product-image"></img>
+        <div id="product-description"></div>
+        <div id="product-price"></div>
+        <div id="product-stock"></div>
+        <button id="add-to-cart">Add to Cart</button>
+        <div id="success-message"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Eco-Friendly Store</p>
+    </footer>
+  </body>
+</html>

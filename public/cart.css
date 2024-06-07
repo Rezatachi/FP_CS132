@@ -1,0 +1,44 @@
+/*
+    Author: Abraham Belayneh 
+    CS 132 Spring 2024
+
+    This is the cart.css for the cart page of the e-commerce website I am developing.
+    I will be styling the cart page here.
+*/
+
+
+main {
+
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+#cart-summary {
+    margin: 5em;
+    text-align: right;
+}
+
+#checkout-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+  CS 132
+  Final Project
+
+  HTML for the home page.
+  This page displays the products available for purchase.
+  This page allows users to filter products by price.
+  This was the original home page for the project.
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Friendly Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="utils.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Ekko Labs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><box-icon name="cart"></box-icon></a>
+    </header>
+    <main>
+      <section class="landing">
+        <h2>Welcome to Ekko Labs</h2>
+        <p>
+          Our mission is to provide eco-friendly products that help you live a
+          sustainable life.
+        </p>
+        <button><a href="#products">View Our Products</a></button>
+      </section>
+      <section id="products">
+        <h2>Our Products</h2>
+        <div id="error-message"></div>
+        <label for="min-price">Min Price:</label>
+        <input
+          type="number"
+          id="min-price"
+          name="min-price"
+          placeholder="Min Price"
+        />
+
+        <label for="max-price">Max Price:</label>
+        <input
+          type="number"
+          id="max-price"
+          name="max-price"
+          placeholder="Max Price"
+        />
+
+        <button id="filter-button">Filter</button>
+        <div id="product-list"></div>
+        
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Eco-Friendly Store</p>
+    </footer>
+  </body>
+</html>

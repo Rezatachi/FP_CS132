@@ -1,0 +1,56 @@
+/*
+    Author: Abraham Belayneh 
+    CS 132 Spring 2024
+
+    This is the faq.css for the faq page of the e-commerce website I am developing.
+    I will be styling the faq page here. Fluid box for all the questions and answers
+*/
+
+main{
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#faq-list {
+    margin: 5em 0;
+    background: #207B64;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faq-item{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 1em;
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.faq-answer {
+    font-size: 1em;
+    margin: 0.5em 0;
+}

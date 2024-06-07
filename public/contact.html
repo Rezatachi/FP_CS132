@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  Final Project
+
+  HTML for the contact page.
+  This page allows users to contact the store.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="utils.js"></script>
+    <script defer src="contact.js"></script>    
+</head>
+<body>
+    <header>
+        <h1>Ekko Labs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="landing contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or concern? Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button id="submitBtn">Submit</button>
+                <div id="error-message"></div>
+                <div id="success-message"></div>
+            </form>
+        </section>
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Store</p>
+    </footer>
+</body>
+</html>
